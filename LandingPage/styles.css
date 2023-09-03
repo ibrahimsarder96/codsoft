@@ -57,7 +57,21 @@ padding: 0px 10px 0px 10px;
 .navigation div{
   display: flex;
 }
-
+/* nav section */
+#header{
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+}
+.favicon{
+  font-size: 3rem;
+  font-weight: 600;
+  color:black;
+}
+.favicon a{
+  color:black;
+}
 
 
 
