@@ -5,6 +5,7 @@
 }
 body{
     height: 100vh;
+    background-color: rgba(255, 255, 240, 0.5);
 }
 #calculator{
     border-radius: 1rem;
@@ -37,7 +38,7 @@ button{
     height: 9vh;
 }
 .gray-bg{
-    background-color: gray;
+    background-color: lightgray;
     color: white;
 }
 .yellow-bg{
@@ -45,7 +46,7 @@ button{
     background-color: rgb(164, 133, 31);
 }
 .dark-gray-bg{
-    background-color: black;
+    background-color: gray;
     color:white;
 }
 .zero{
