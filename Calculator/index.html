@@ -7,38 +7,37 @@
   <title>Calculator</title>
 </head>
 <body>
-  <table id="calcu">
-    <tr>
-        <td colspan="3">
-            <input type="text" id="result">
-        </td>
-        <td><input type="button" value="c"></td>
-    </tr>
-
-    <tr>
-        <td><input type="button" value="1"></td>
-        <td><input type="button" value="2"></td>
-        <td><input type="button" value="3"></td>
-        <td><input type="button" value="/"></td>
-    </tr>
-    <tr>
-        <td><input type="button" value="4"></td>
-        <td><input type="button" value="5"></td>
-        <td><input type="button" value="6"></td>
-        <td><input type="button" value="*"></td>
-    </tr>
-    <tr>
-        <td><input type="button" value="7"></td>
-        <td><input type="button" value="8"></td>
-        <td><input type="button" value="9"></td>
-        <td><input type="button" value="-"></td>
-    </tr>
-    <tr>
-        <td><input type="button" value="0"></td>
-        <td><input type="button" value="."></td>
-        <td><input type="button" value="="></td>
-        <td><input type="button" value="+"></td>
-    </tr>
-</table>
+    <div id="calculator">
+    <div id="display" class="input">0</div>
+      <div class="line">
+        <button class="gray-bg button">AC</button>
+        <button class="gray-bg button">+/</button>
+        <button class="gray-bg button">%</button>
+        <button class="yellow-bg button">/</button>
+      </div>
+      <div class="line">
+        <button class="dark-gray-bg button">7</button>
+        <button class="dark-gray-bg button">8</button>
+        <button class="dark-gray-bg button">9</button>
+        <button class="yellow-bg button">X</button>
+      </div>
+      <div class="line">
+        <button class="dark-gray-bg button">4</button>
+        <button class="dark-gray-bg button">5</button>
+        <button class="dark-gray-bg button">6</button>
+        <button class="yellow-bg button">-</button>
+      </div>
+      <div class="line">
+        <button class="dark-gray-bg button">1</button>
+        <button class="dark-gray-bg button">2</button>
+        <button class="dark-gray-bg button">3</button>
+        <button class="yellow-bg button">+</button>
+      </div>
+      <div class="line">
+        <button class="dark-gray-bg zero button">0</button>
+        <button class="dark-gray-bg button">.</button>
+        <button class="yellow-bg button">=</button>
+      </div>
+    </div>
 </body>
 </html>

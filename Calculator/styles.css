@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+#calculator{
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    height: 70vh;
+    width: 20vw;
+}
+.input{
+    width: 20vw;
+    height: 15vh;
+    color: white;
+    font-size: 5vh;
+    padding: 0 2rem;
+    padding-top: 5vh;
+
+}
+.line{
+    padding: 0 1rem;
+    height: 10vh;
+}
+button{
+    cursor: pointer;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    width: 4vw;
+    height: 9vh;
+}
+.gray-bg{
+    background-color: gray;
+    color: white;
+}
+.yellow-bg{
+    color: white;
+    background-color: rgb(164, 133, 31);
+}
+.dark-gray-bg{
+    background-color: black;
+    color:white;
+}
+.zero{
+    width: 8.5vw;
+}
