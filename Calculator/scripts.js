@@ -10,12 +10,13 @@ function isOperator(value){
 }
 
 
-for(let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click",  () =>{
+for(let i = 0; i < buttons.length; ++i) {
+  buttons[i].addEventListener("click", () =>{
     let text = buttons[i].textContent;
     if(isOperator(text)){
       display.textContent = " ";
       operand2 = 0;
+      operator = text;
       return;
     }
     if(text == '='){
@@ -25,6 +26,7 @@ for(let i = 0; i < buttons.length; i++) {
       else{
           if(operator == '+'){
             display.textContent = operand1 + operand2;
+            console.log(operator);
           }
           if(operator == 'X'){
             display.textContent = operand1 * operand2;
@@ -36,6 +38,9 @@ for(let i = 0; i < buttons.length; i++) {
             display.textContent = operand1 / operand2;
           }
       }
+      operand2 = null;
+      operator = null;
+      operand1 = parseFloat(display.textContent);
       return;
     }
     if(text == 'AC'){
@@ -45,8 +50,23 @@ for(let i = 0; i < buttons.length; i++) {
       display.textContent = ' ';
       return;
     }
+    if(text == '+/-'){
+      if(operand2 == null){
+        operand1 = -1 * operand1;
+        display.textContent = operand1;
+      }
+      else{
+        operand2 = -1 * operand2;
+        display.textContent = operand2;
+      }
+      return;
+    }
+    if(operand2 !== null){
+      display.textContent =  display.textContent + text;
+      display.operand2 = parseFloat(display.textContent)
+      return;
+    }
     display.textContent =  display.textContent + text;
     display.operand1 = parseFloat(display.textContent)
-    console.log(display.operand1);
   })
 }
