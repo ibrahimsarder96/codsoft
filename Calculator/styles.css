@@ -5,7 +5,7 @@
 }
 body{
     height: 100vh;
-    background-color: rgba(255, 255, 240, 0.5);
+    background-color: rgba(155, 133, 130, 13);
 }
 #calculator{
     border-radius: 1rem;
@@ -18,13 +18,13 @@ body{
     width: 20vw;
 }
 .input{
-    width: 20vw;
+    width: 17vw;
     height: 15vh;
     color: white;
     font-size: 5vh;
     padding: 0 2rem;
     padding-top: 5vh;
-
+    overflow: hidden;
 }
 .line{
     padding: 0 1rem;
@@ -52,3 +52,24 @@ button{
 .zero{
     width: 8.5vw;
 }
+
+
+/* responsive */
+@media only screen and (max-width: 576px) {
+    body {
+      background-color: lightblue;
+    }
+    #calculator{
+        height: 70vh;
+        width: 100%;
+    }
+    button{
+        width: 22vw;
+    }
+    .input{
+        width: 90%;
+    }
+    .zero{
+        width: 47%;
+    }
+  }

@@ -6,9 +6,8 @@ let operand2 = null;
 let operator = null;
 
 function isOperator(value){
-  return value == '+' || value == '-' || value == 'X'|| value == '/';
+  return value == "+" || value == "-" || value == "X" || value == "/";
 }
-
 
 for(let i = 0; i < buttons.length; ++i) {
   buttons[i].addEventListener("click", () =>{
@@ -26,7 +25,6 @@ for(let i = 0; i < buttons.length; ++i) {
       else{
           if(operator == '+'){
             display.textContent = operand1 + operand2;
-            console.log(operator);
           }
           if(operator == 'X'){
             display.textContent = operand1 * operand2;
@@ -63,10 +61,11 @@ for(let i = 0; i < buttons.length; ++i) {
     }
     if(operand2 !== null){
       display.textContent =  display.textContent + text;
-      display.operand2 = parseFloat(display.textContent)
+      operand2 = parseFloat(display.textContent)
       return;
     }
+
     display.textContent =  display.textContent + text;
-    display.operand1 = parseFloat(display.textContent)
+    operand1 = parseFloat(display.textContent)
   })
 }
